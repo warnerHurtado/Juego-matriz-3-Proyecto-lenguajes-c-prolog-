@@ -1,0 +1,11 @@
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\bin\Debug\proyecto_3_lenguajes_warner_hurtado.exe.config
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\bin\Debug\proyecto_3_lenguajes_warner_hurtado.exe
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\bin\Debug\proyecto_3_lenguajes_warner_hurtado.pdb
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\obj\Debug\proyecto_3_lenguajes_warner_hurtado.csprojAssemblyReference.cache
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\obj\Debug\proyecto_3_lenguajes_warner_hurtado.Form1.resources
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\obj\Debug\proyecto_3_lenguajes_warner_hurtado.Properties.Resources.resources
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\obj\Debug\proyecto_3_lenguajes_warner_hurtado.csproj.GenerateResource.cache
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\obj\Debug\proyecto_3_lenguajes_warner_hurtado.csproj.CoreCompileInputs.cache
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\obj\Debug\proyecto_3_lenguajes_warner_hurtado.exe
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\obj\Debug\proyecto_3_lenguajes_warner_hurtado.pdb
+C:\Users\warne\Desktop\proyecto_3_lenguajes_warner_hurtado\obj\Debug\proyecto_3_lenguajes_warner_hurtado.csproj.CopyComplete
