@@ -29,6 +29,9 @@ namespace proyecto_3_lenguajes_warner_hurtado
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            /**
+             * Poner la dirección del bin de donde tiene instalado prolog
+             */
             Environment.SetEnvironmentVariable("Path", @"C:\\Program Files (x86)\\swipl\\bin");
             string[] p = { "-q", "-f", @"operations.pl" };
             PlEngine.Initialize(p);
@@ -62,8 +65,6 @@ namespace proyecto_3_lenguajes_warner_hurtado
             button1.Enabled = false;
             button5.Enabled = false;
             button2.Enabled = true;
-            //button3.Enabled = true;
-            //comboBox1.Enabled = true;
             matrix = new int[size, size];
 
             for (int i = 0; i < size; i++)
@@ -82,7 +83,6 @@ namespace proyecto_3_lenguajes_warner_hurtado
                     btn.ForeColor = Color.Red;
                     btn.Font = new Font("Georgia", 10);
                     btn.Click += new EventHandler(button_Click);
-                    //btn.Cursor.Handle;
                     btn.Cursor = Cursors.Hand;
 
                     matrix[i, n] = btnName;
@@ -99,7 +99,9 @@ namespace proyecto_3_lenguajes_warner_hurtado
                 _row++;
             }
         }
-
+        /**
+         * Función para llenar automáticamente
+         */
         protected void fill_automatic()
         {
 
@@ -133,6 +135,9 @@ namespace proyecto_3_lenguajes_warner_hurtado
         
         }
 
+        /**
+         * Función del click de los botones dinámicos
+         */
         protected void button_Click(object sender, EventArgs e)
         {
             button2.Enabled = false;
@@ -156,6 +161,10 @@ namespace proyecto_3_lenguajes_warner_hurtado
             }
             buttonTouched((int)Char.GetNumericValue(row_buttom), (int)Char.GetNumericValue(column_buttom));
         }
+
+        /**
+         * Función para que el botón después de tocado me indique la información
+         */
         protected void buttonTouched(int row, int column)
         {
             bool p = true;
@@ -184,7 +193,6 @@ namespace proyecto_3_lenguajes_warner_hurtado
                         listBox1.Items.Add("Grupo: " + groupName + ", Total: " + totalForGroups);
                         foreach (PlQueryVariables z in consul.SolutionVariables)
                         {
-                            //listBox1.Items.Add(z["X"].ToString());
                         }
                         consul.Dispose();
                         carga.Dispose();
@@ -196,6 +204,7 @@ namespace proyecto_3_lenguajes_warner_hurtado
                         return;
                     }
                 }
+                //Aquí validamos los lados que ya han sido marcados
 
                 int r = row - 1;
                 if (r != -1)
@@ -261,6 +270,7 @@ namespace proyecto_3_lenguajes_warner_hurtado
             }
             chargeComboBox();
         }
+        //Función para ir agregando a la conexión
         private void connection(string num1, string num2)
         {
             try
@@ -279,6 +289,7 @@ namespace proyecto_3_lenguajes_warner_hurtado
             catch { }
         }
 
+        //Función para extraer el total de grupos
         private string getTotalForGroup()
         {
             int n = cantGroup;
@@ -305,6 +316,7 @@ namespace proyecto_3_lenguajes_warner_hurtado
 
             return p;
         }
+        //Función que me carga el combo box con los grupos
         private void chargeComboBox()
         {
             string list = "";
@@ -333,6 +345,8 @@ namespace proyecto_3_lenguajes_warner_hurtado
             }
             catch { }
         }
+
+        //Función para validar si existe un grupo ya creado con ese valor
         private int existG(int value)
         {
             listBox1.Items.Clear();
@@ -367,6 +381,7 @@ namespace proyecto_3_lenguajes_warner_hurtado
             return 1;
         }
 
+        //Función para limpiar el color de los botones
         private void delete_color_select()
         {
             foreach (var ctrl in this.Controls.OfType<Button>())
@@ -440,7 +455,7 @@ namespace proyecto_3_lenguajes_warner_hurtado
 
                 foreach (PlQueryVariables z in consul.SolutionVariables)
                 {
-                    //listBox1.Items.Add(z["X"].ToString());
+
 
                     foreach (var ctrl in this.Controls.OfType<Button>())
                     {
